@@ -3,7 +3,8 @@
 
 ## Repository Structure
 
-researchactivity1/ ├── Results/                # Generated outputs such as plots, processed data, or evaluation results 
+researchactivity1/
+├── Results/                # Generated outputs such as plots, processed data, or evaluation results 
                    ├── Source/                 # Python scripts and implementation files 
                    ├── report.tex              # LaTeX research report 
                    ├── requirements.txt        # Python dependencies 
@@ -39,7 +40,11 @@ Usage
 
 Run the Python scripts inside the Source/ directory to perform the analysis.
 ```bash
-python3 Source/main.py
+python3 Source/output.py #For distance matrix and Rotation graph
+
+python3 Source/memory.py #To store memory usage plot.
+
+python3 Soure/time.py #To save runtime
 ```
 
 ---
@@ -50,3 +55,4 @@ All outputs generated during experimentation are stored in the Results/ director
 
 
 ---
+
