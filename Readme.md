@@ -10,11 +10,10 @@ cd researchactivity1
 ```
 2. Create Virtual Environment
 ```bash
-python -m venv venv
+python3 -m venv venv
 ```
 Activate environment:
 
-Linux / macOs
 ```bash
 source venv/bin/activate
 ```
@@ -78,3 +77,4 @@ python Rotationdiameter.py
 
 Output:
 - `Results/rotation_diameter.csv` - Diameter values for each n
+
