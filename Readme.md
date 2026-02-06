@@ -1,17 +1,6 @@
 # Research Activity 1
 ---
 
-## Repository Structure
-
-researchactivity1/
-├── Results/                # Generated outputs such as plots, processed data, or evaluation results 
-                   ├── Source/                 # Python scripts and implementation files 
-                   ├── report.tex              # LaTeX research report 
-                   ├── requirements.txt        # Python dependencies 
-                   ├── README.md               # Project documentation 
-                   └── .gitignore              # Git ignore configuration
----
-
 ## Installation
 
 ### 1. Clone Repository
@@ -55,4 +44,5 @@ All outputs generated during experimentation are stored in the Results/ director
 
 
 ---
+
 
