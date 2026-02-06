@@ -24,25 +24,57 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 ---
+## Usage
 
-Usage
+### Generate Rotation Graph and Compute Distances
 
-Run the Python scripts inside the Source/ directory to perform the analysis.
+To generate a rotation graph for n=3 nodes:
+
 ```bash
-python3 Source/output.py #For distance matrix and Rotation graph
-
-python3 Source/memory.py #To store memory usage plot.
-
-python3 Soure/time.py #To save runtime
+cd Source
+python Outputs.py
 ```
 
----
+This will:
+- Generate all binary trees with 3 nodes
+- Create the rotation graph and distance matrix
+- Calculate and print the rotation diameter
+- Save a visualization to `Results/rotation_graph.png`
 
-Results
+### Time Benchmarking
 
-All outputs generated during experimentation are stored in the Results/ directory.
+To benchmark runtime performance for different tree sizes (n=3 to 8):
 
+```bash
+cd Source
+python time.py
+```
 
----
+Outputs:
+- `Results/time_benchmark.csv` - Raw timing data
+- `Results/runtime_plot.png` - Performance visualization
 
+### Memory Benchmarking
 
+To benchmark memory usage for different tree sizes:
+
+```bash
+cd Source
+python memory.py
+```
+
+Outputs:
+- `Results/memory_benchmark.csv` - Memory usage data
+- `Results/memory_plot.png` - Memory consumption visualization
+
+### Rotation Diameter Analysis
+
+To compute rotation diameters for trees of different sizes:
+
+```bash
+cd Source
+python Rotationdiameter.py
+```
+
+Output:
+- `Results/rotation_diameter.csv` - Diameter values for each n
