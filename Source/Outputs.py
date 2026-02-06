@@ -6,5 +6,5 @@ dist_matrix, nodes = rotation_distance_matrix(G3)
 
 print("Distance matrix:")
 print(dist_matrix)
-
+print(f"Rotation Diameter = {dist_matrix.max()}")
 draw_rotation_graph(G3)
